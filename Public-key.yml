@@ -1,0 +1,8 @@
+- name: SSH Key
+  hosts: worker03
+  become: true
+  tasks:
+   - name: share ssh key
+     ansible.posix.authorized_key:
+      user: ansible
+      key: "{{ lookup('file', '/home/ansible/.ssh/id_rsa.pub') }}"
