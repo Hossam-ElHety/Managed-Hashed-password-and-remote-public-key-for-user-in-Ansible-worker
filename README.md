@@ -1,4 +1,4 @@
-# Managed-Hashed-password-and-remote-public-key-for-user-in-Ansible-worker
+# Sharing-public-key-for-user-from-master-to-worker-in-Ansible
 
 Using the authorized_key module you can deploy your public key to the remote_user account on all managed hosts.
 You need to create and run this [playbook](https://github.com/Hossam-ElHety/Managed-Hashed-password-and-remote-public-key-for-user-in-Ansible-worker/blob/main/Public-key.yml)
